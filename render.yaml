@@ -1,3 +1,7 @@
+# This is for Render.com deployment (requires credit card)
+# For FREE deployment without credit card, use PythonAnywhere instead:
+# See PYTHONANYWHERE_DEPLOYMENT.md for instructions
+
 services:
   - type: web
     name: stayhub-backend
