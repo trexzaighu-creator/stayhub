@@ -1,0 +1,16 @@
+[Unit]
+Description=Hostel Frontend (Next.js)
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/hostel/frontend_next
+Environment=NODE_ENV=production
+EnvironmentFile=/opt/hostel/frontend_next/.env
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

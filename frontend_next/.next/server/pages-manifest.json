@@ -1,0 +1,13 @@
+{
+  "/_error": "pages/_error.js",
+  "/auth/login": "pages/auth/login.html",
+  "/auth/register": "pages/auth/register.html",
+  "/hostels/[id]": "pages/hostels/[id].html",
+  "/hostels": "pages/hostels.html",
+  "/_app": "pages/_app.js",
+  "/": "pages/index.html",
+  "/owner/dashboard": "pages/owner/dashboard.html",
+  "/profile": "pages/profile.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
