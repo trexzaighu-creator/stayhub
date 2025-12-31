@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stayhub-backend
+    runtime: python
+    buildCommand: pip install -r backend_django/requirements.txt
+    startCommand: cd backend_django && python manage.py migrate && gunicorn backend_django.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: DEBUG
+        value: false
+      - key: ALLOWED_HOSTS
+        value: "*"
