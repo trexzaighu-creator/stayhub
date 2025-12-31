@@ -16,7 +16,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  NEXT_PUBLIC_API_URL: ${{ secrets.PYTHONANYWHERE_API_URL || 'http://localhost:8000' }}
+  NEXT_PUBLIC_API_URL: ${{ secrets.PYTHONANYWHERE_API_URL }}
+  DEFAULT_API_URL: http://localhost:8000
 
 jobs:
   build:
