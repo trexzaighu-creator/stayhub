@@ -37,9 +37,9 @@ jobs:
         working-directory: frontend_next
         run: npm install
 
-      - name: Build
+      - name: Export static site
         working-directory: frontend_next
-        run: npm run build
+        run: npm run export
         env:
           NEXT_PUBLIC_API_URL: ${{ secrets.PYTHONANYWHERE_API_URL || 'http://localhost:8000' }}
 
